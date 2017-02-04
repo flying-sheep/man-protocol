@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+	<title>man:</title>
+	<style type="text/css" >
+	text {
+		font-family: Futura, "Futura PT", "Futura Std", Beteckna;
+		font-size: 34px;
+		font-weight: lighter;
+		font-stretch: condensed;
+		/*dominant-baseline: central;*/ /* lowercase, so use dy=".5ex" instead */
+		text-anchor: middle;
+	}
+	</style>
+	<defs>
+		<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop offset="0%" style="stop-opacity:.3"/>
+			<stop offset="100%" style="stop-opacity:1"/>
+		</linearGradient>
+	</defs>
+	<!--<rect width="48" height="48" fill="grey"/>-->
+	<text x="50%" y="50%" dy=".5ex" fill="url(#gradient)">man:</text>
+</svg>

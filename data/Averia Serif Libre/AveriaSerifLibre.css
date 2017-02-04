@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Averia Serif Libre';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Averia Serif Libre Light'), local('AveriaSerifLibre-Light'), url(AveriaSerifLibre-Light.woff) format('woff');
+}
+@font-face {
+	font-family: 'Averia Serif Libre';
+	font-style: italic;
+	font-weight: 300;
+	src: local('Averia Serif Libre Light Italic'), local('AveriaSerifLibre-LightItalic'), url(AveriaSerifLibre-LightItalic.woff) format('woff');
+}
+@font-face {
+	font-family: 'Averia Serif Libre';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Averia Serif Libre Regular'), local('AveriaSerifLibre-Regular'), url(AveriaSerifLibre-Regular.woff) format('woff');
+}
+@font-face {
+	font-family: 'Averia Serif Libre';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Averia Serif Libre Italic'), local('AveriaSerifLibre-Italic'), url(AveriaSerifLibre-Italic.woff) format('woff');
+}
+@font-face {
+	font-family: 'Averia Serif Libre';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Averia Serif Libre Bold'), local('AveriaSerifLibre-Bold'), url(AveriaSerifLibre-Bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Averia Serif Libre';
+	font-style: italic;
+	font-weight: 700;
+	src: local('Averia Serif Libre Bold Italic'), local('AveriaSerifLibre-BoldItalic'), url(AveriaSerifLibre-BoldItalic.woff) format('woff');
+}

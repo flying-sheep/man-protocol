@@ -1,0 +1,32 @@
+{
+	"name": "man-protocol",
+	"fullName": "man:protocol",
+	"description": "registers a man: protocol handler",
+	"author": "flying sheep",
+	"icon": "data/man.png",
+	"license": "GPLv3",
+	"version": "0.1.0",
+	"dependencies": {
+		"protocol": "github:flying-sheep/jetpack-protocol#writeFrom"
+	},
+	"main": "lib/main.js",
+	"preferences": [{
+		"name": "path",
+		"title": "Manpage Path",
+		"description": "Location of manpages on your system",
+		"type": "string",
+		"value": "/usr/share/man"
+	}, {
+		"name": "localize",
+		"title": "Localize",
+		"description": "Prefer localized manpages?",
+		"type": "bool",
+		"value": true
+	}, {
+		"name": "system",
+		"title": "System converter",
+		"description": "Try to use ugly, but complete /usr/bin/man to create HTML",
+		"type": "bool",
+		"value": true
+	}]
+}

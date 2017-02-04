@@ -1,0 +1,100 @@
+body, html
+	height 100%
+
+body
+	overflow auto
+	font-family sans-serif
+	margin auto
+	max-width 36em
+
+h1, h2, h3
+	font-family "Averia Serif Libre"
+
+h1
+	text-align center
+
+aside.toc
+	position fixed
+	top 0
+	left 0
+	max-height 100%
+	width 12em
+	
+	display flex
+	flex-direction column
+	
+	color grey
+	background-color #111
+	
+	ol, h3
+		flex none
+		margin 0
+		padding-top 1ex
+		padding-bottom 1ex
+	
+	ol
+		flex auto
+		overflow auto
+		min-height 0 //no idea why
+		
+		counter-reset li
+		
+		> li
+			list-style none
+			position relative
+			
+			> a
+				display block
+				transition background-color 1s
+				
+				&:hover
+					background-color #222
+			
+			&::before
+				position absolute
+				top  .1em
+				left -2em
+				
+				display block
+				width  1.25em
+				height 1.25em
+				text-align center
+				
+				font-size .8em
+				content counter(li)
+				counter-increment li
+				border 1px solid rgba(white, .2)
+				border-radius 100%
+	
+	h3
+		text-align center
+		
+		border-bottom 1px solid rgba(white, .3)
+		
+		color white
+		cursor pointer
+		
+		&::before, &::after
+			padding 0 1ex
+			content "▼"
+		
+		&::before
+			opacity 0 /* for spacing */
+		
+		&.shown::after
+			content "▲"
+
+.error
+	color red
+	
+	> strong:first-child
+		border 1px dotted rgba(grey, .5)
+		border-radius 3px
+
+a[href^="#"]
+	&:link, &:visited
+		text-decoration none
+		color dimgrey
+		
+		&::first-letter
+			text-decoration underline
